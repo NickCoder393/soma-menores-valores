@@ -1,0 +1,24 @@
+{
+  "name": "soma-menores-valores",
+  "version": "1.0.0",
+  "description": "Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NickCoder393/soma-menores-valores.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NickCoder393/soma-menores-valores/issues"
+  },
+  "homepage": "https://github.com/NickCoder393/soma-menores-valores#readme",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "express": "^4.17.2",
+    "mocha": "^9.2.0"
+  }
+}
