@@ -1,11 +1,11 @@
 var express = require('express');
 var app = new express();
-var params = [
+var arr = [
     3,100,20,10,4
 ];
 
 app.get('/soma-menores-valores', function(req, res) {    
-    let ret = sumTwoSmallestNumbers(params);    
+    let ret = sumTwoSmallestNumbers(arr);    
     res.send('Soma: ' + ret);
 });
 
