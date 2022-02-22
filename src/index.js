@@ -1,24 +1,3 @@
-/*
-1-no arquivo criar uma api na porta 9000;
-2-criar um metodo get para (/) para raiz;
-3-criar edevolver um "hello word"(usando express);
-4-executar uma api usando browser;
-
-
-
-var express = require ('express');
-var app = express( );
-
-app.get('/', function(req, res){
-    let ret = {'retorno':'Hello Word'};
-    res.send(ret);
-});
-
-
-app.listen(9000, () => console.log('Express started at http://localhost:9000'));
-
-*/
-
 var express = require('express');
 var app = new express();
 var params = [
