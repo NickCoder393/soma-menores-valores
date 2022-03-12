@@ -28,9 +28,9 @@ app.get('/soma-menores-valores', function(req, res) {
 });
 
 app.post('/soma-dois-valores', function(req, res) {    
-   var valor1 = parseInt(req.body.numero1); 
-   var valor2 = parseInt(req.body.numero2);
-    console.log(req.body);
+   var valor1 = Number(req.body.numero1); 
+   var valor2 = Number(req.body.numero2);
+    
    var total = calc.sumTwoValues(valor1, valor2);
    res.send('Soma: ' + total);
 });

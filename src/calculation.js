@@ -6,9 +6,6 @@
 6-criar uma instacia desta classe e chama esta função
 */
 
-const { toValueOrError } = require("mocha/lib/runnable");
-
-
 
 //Criando a classe
 module.exports = class Calculation{
@@ -28,7 +25,12 @@ module.exports = class Calculation{
         
     };
 
-    sumTwoValues(number1, number2) {
-        return (number1 + number2);
+    sumTwoValues(number1, number2){
+
+        if(isNaN(number1) || isNaN(number2))
+            return 'invalid params'; 
+        
+        let soma = (number1 + number2);    
+        return soma;
     };
 }
