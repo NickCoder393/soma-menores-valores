@@ -10,6 +10,10 @@ Calculadora
 <body>
 <!-- kdmsck
 
+  adicionar um campo combobox(selectbox) em Html com as seguinte funções subtração, multiplicação e divisão
+
+
+
 *renomer os 2 campos para "numero1, numero2"(label, name e id)
 remover o "textarea" e adicionar o "submit"
 alterar o "end point"da minha api para ele receber o metodo "post"
@@ -26,6 +30,15 @@ Pesquisar como receber os parametros via post
            <label for="numero2">Numero2===></label>
            <input type="text" id="numero2" name="numero2">
          </li>
+         
+         <select name="operator" id="operator">
+          <option value="">select</option> 
+          <option value="soma">Somar</option>
+           <option value="subtrair">Subtrair</option>
+           <option value="multiplicar">Muliplicar</option>
+           <option value="dividir">Dividir</option>
+         </select>
+         <br><br>
          <li>
            <label for="rst">Resultado===></label>
            <input type="submit" value="Send Request">

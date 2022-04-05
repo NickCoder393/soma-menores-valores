@@ -24,15 +24,28 @@ app.get('/',function(req, res){
 app.get('/soma-menores-valores', function(req, res) {    
     // let ret = sumTwoSmallestNumbers(arr);
     let ret = calc.sumTwoSmallestNumbers(arr);
-    res.send('Soma: ' + ret);
+    res.send('Resultado: ' + ret);
 });
 
 app.post('/soma-dois-valores', function(req, res) {    
    var valor1 = Number(req.body.numero1); 
    var valor2 = Number(req.body.numero2);
+   var operation = req.body.operator;
+   var total = 0;
+
+    if (operation== "soma"){
+       total =calc.sumTwoValues(valor1, valor2);
+    } else if(operation == "subtrair"){
+        total =calc.subTwoValues(valor1, valor2);  
+    } else if(operation == "multiplicar"){
+        total =calc.multTwoValues(valor1, valor2);
+    } else if(operation == "dividir"){
+        total =calc.divTwoValues(valor1, valor2);
+    }
+
+    res.send('Result ' + total);
+    console.log(operation);
     
-   var total = calc.sumTwoValues(valor1, valor2);
-   res.send('Soma: ' + total);
 });
 
 

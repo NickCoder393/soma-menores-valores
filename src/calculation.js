@@ -29,8 +29,36 @@ module.exports = class Calculation{
 
         if(isNaN(number1) || isNaN(number2))
             return 'invalid params'; 
+
+            let soma = (number1 + number2);    
+            return soma;
+
+    };
+
+    subTwoValues(number1, number2){
+
+        if(isNaN(number1) || isNaN(number2))
+            return 'invalid params';
+
+            let subtract = (number1 - number2); 
+            return subtract;
+    };
+
+    multTwoValues(number1, number2){
+        if(isNaN(number1) || isNaN(number2)){
+            return 'invalid params';
+        }
         
-        let soma = (number1 + number2);    
-        return soma;
+        let mult = (number1 * number2); 
+        console.log("resultado:", mult)
+        return mult;
+    };
+
+    divTwoValues(number1, number2){
+        if(isNaN(number1) || isNaN(number2))
+            return 'invalid params';
+             
+            let division = (number1 / number2); 
+            return division;
     };
 }
